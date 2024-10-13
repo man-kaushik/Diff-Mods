@@ -1,2 +1,12 @@
+<!-- can't use href bcuz it loads whole project
+ using routerLink to navigate through components -->
 
-<router-outlet />
+<div class="ui container">
+  <div class="ui secondary pointing menu">
+    <a routerLink="/elements" routerLinkActive="active" class="item">Elements</a>
+    <a routerLink="/collections" routerLinkActive="active" class="item">Collections</a>
+  </div>
+  <div class="ui segment">
+    <router-outlet />
+  </div>
+</div>
