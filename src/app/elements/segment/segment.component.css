@@ -1,0 +1,4 @@
+/* hide class ui icon header if it does not have any data */
+div.ui.icon.header:empty{
+    display: none;
+}
