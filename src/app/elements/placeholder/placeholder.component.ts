@@ -1,12 +1,17 @@
-import { Component } from '@angular/core';
+import { NgIf } from '@angular/common';
+import { Component, Input } from '@angular/core';
+import { TimesDirective } from '../times.directive';
 
 @Component({
   selector: 'app-placeholder',
   standalone: true,
-  imports: [],
+  imports: [NgIf,TimesDirective],
   templateUrl: './placeholder.component.html',
   styleUrl: './placeholder.component.css'
 })
 export class PlaceholderComponent {
+  //Declared with Default value
+  @Input() header=true;
+  @Input() lines=3;
 
 }

@@ -1,1 +1,14 @@
-<p>placeholder works!</p>
+<!-- 
+    header = true shows header portion
+    lines = 3 to show how many lines are shown under header
+-->
+<div class="ui placeholder">
+    <div *ngIf="header" class="image header">
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <div class="paragraph">
+        <!-- Made appTimes directive to repeat the no. of lines -->
+        <div *appTimes="lines" class="line"></div>
+    </div>
+</div>
